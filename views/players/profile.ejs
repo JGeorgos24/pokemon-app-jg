@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon App Login</title>
+    <link rel="stylesheet" href="/css/playerProfile.css" />
+</head>
+
+<body>
+    <h1> Welcome to your Players Profile  </h1>
+    <h2> Pokemon Trainer = <%=player.name%> </h2>
+
+    <form action="/players/profile/<%=player.id%>?_method=PUT" method="POST"> 
+    Name: <input type="text" name="name" value= "<%=player.name%>" />
+    <br/>
+    Username: <input type="text" name="username" value= "<%=player.username%>"  />
+    <br/>
+    Password: <input type="text" name="password" value= "<%=player.password%>" />
+    <br/>
+    <br/>
+    <input type="submit" value="Edit Profile - Submit Changes" />
+    <br/>
+    <br/>
+    Team: <select name="teamId">
+        <% for (let i = 0; i<teams.length; i++) { %>
+            <option value="<%=teams[i].id%>"><%=teams[i].name%></option>
+        <%}%>
+    </select>  
+    <br/>
+    <br/>
+    Pokemon: <select name="pokemonId">
+        <% for (let i = 0; i<pokemons.length; i++) { %>
+        <option value="<%=pokemons[i].id%>"><%=pokemons[i].name%></option>
+        <%}%>
+    </select> 
+    </form>
+
+    <br/>
+    <form action="/players/<%=player.id%>?_method=DELETE" method="POST">
+        <input type="submit" value="Delete Player" />
+    </form>
+
+    <h3>List of Pokemon</h3>
+    <% for (let i=0; i<player.Pokemons.length; i++){ %>
+        <li>
+            <a class=pokemonList href="/pokemon/<%=player.Pokemons[i].id%>"><%=player.Pokemons[i].name%> <br/></a>
+        </li>
+        
+    <%}%>
+
+
+    <br/>
+    <a href="/players"> Return to Players Profile Hompage </a>
+
+    <br><br>
+    <a href="/pokemon"> View all Pokemon </a>  
+</body>
+
+</html>

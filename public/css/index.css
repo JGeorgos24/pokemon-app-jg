@@ -1,0 +1,34 @@
+body {
+    background-image: url("https://i.imgur.com/m0tkSVJ.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    color: white;
+    background-color: black;
+}
+
+.login{
+    color: white;
+}
+
+.addNewPokemon{
+    color: white;
+}
+
+ul{
+    color:white;
+}
+
+.pokemonName{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.editThePokemon{
+    color: gray;
+}
+
+h1{
+    color: white;
+}

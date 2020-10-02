@@ -1,0 +1,11 @@
+body {
+    background-image: url("https://i.imgur.com/e1PHGMn.png");
+    background-position: center;
+    background-repeat: no-repeat; 
+    color: white;
+    background-color: rgb(48, 48, 48);
+}
+
+a{
+    color: white;
+}

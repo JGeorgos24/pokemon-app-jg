@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon App Login</title>
+    <link rel="stylesheet" href="/css/playerSignup.css" />
+</head>
+<body>
+    <h1> Sign up as a New Player </h1>
+
+    <form action='/players/signup' method="POST">
+        Insert Name: <input type="text" name="name" />
+        <br/> 
+        Insert Username: <input type="text" name="username" />
+        <br/> 
+        Insert Password: <input type="text" name="password" />
+        <br/> <br/>
+        <input type="submit" value="Create Player" />
+    </form>
+
+    <br/>
+    <a href="/players"> Return to Players Profile Hompage </a>
+
+</body>
+</html>

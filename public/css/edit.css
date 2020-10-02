@@ -1,0 +1,18 @@
+body {
+    background-image: url("https://i.imgur.com/Xw7IYui.jpg");
+    /* background-size: cover; */
+    background-repeat: no-repeat; 
+    color: white;
+    background-color: black;
+    background-position-x: right;
+    background-position-y: top;
+}
+
+h1{
+    color: white;
+}
+
+a{
+    color:white;
+    
+}

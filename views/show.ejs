@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon App</title>
+    <link rel="stylesheet" href="/css/show.css" />
+</head>
+<body>
+    <h1> Show My Pokemon</h1>
+    <%=pokemon.name%> looks like the image below.
+    <br/>
+    <img alt="<%=pokemon.name%>" src="<%=pokemon.img%>">
+
+    <h4> List of Players with this Pokemon</h4>
+        <%for(let i=0; i<pokemon.Players.length; i++) {%>
+            <li>
+                <%=pokemon.Players[i].name%>
+            </li>
+        <% } %>
+
+
+    <br/>
+    <h5> <a href="/pokemon"> Return to Pokemon Homepage</a> </h5>
+
+</body>
+</html>

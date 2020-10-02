@@ -1,0 +1,21 @@
+body {
+    background-image: url("https://i.imgur.com/AHxuMXr.png");
+    background-repeat: no-repeat; 
+    color: white;
+    background-color: black;
+    background-position-x: right;
+    background-position-y: top;
+}
+
+a{
+    color: white;
+}
+
+.pokemonHomepage{
+    color: gray;
+    text-decoration:none;
+}
+
+p{
+    color: gray; 
+}
