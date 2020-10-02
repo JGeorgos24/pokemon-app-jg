@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const methodOverride = require('method-override');
 
@@ -16,7 +18,7 @@ app.use('/pokemon', routes.pokemon);
 app.use('/players', routes.players);
 
 // Make app on port 3001
-app.listen(3001, () => {
+app.listen(process.env.PORT, () => {
     console.log('I am listening on port 3001.');
 })
 
