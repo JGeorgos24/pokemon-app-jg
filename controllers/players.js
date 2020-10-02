@@ -23,12 +23,8 @@ const signup = (req, res) => {
 const renderProfile = (req, res) => {
     Player.findByPk(req.params.index, {
         include: [
-            {
-                model: Team
-            },
-            {
-                model: Pokemon 
-            }
+            {model: Team},
+            {model: Pokemon}
         ]
     })
     .then(playerProfile => {
